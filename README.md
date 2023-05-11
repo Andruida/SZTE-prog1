@@ -1,4 +1,4 @@
-# SZTE-progalap
+# SZTE-prog1
 
 2023 tavaszi félév Programozás I. kurzus gyakorlatán elérhető házi és gyakorló feladatok.
 

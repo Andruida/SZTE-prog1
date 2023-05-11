@@ -1,0 +1,155 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Megye.java              
+  inflating: Telepules.java          
+  inflating: TelepuleskezeloException.java  
+New directory generated for output
+Feltoltott .java fajlok: 3
+Ezekbol keszult .class fajlok: 4
+Sikeres feltoltes!
+[TelepuleskezeloException tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+✖ Az osztaly fejlece nem megfelelo!
+Adattagok
+✓ Adattag: okozo
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: getOkozo
+∑ TelepuleskezeloException
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Telepules tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: nev
+✓ Adattag: email
+✓ Adattag: terulet
+✓ Adattag: keruletek
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: getNev
+✓ Metodus: getTerulet
+✓ Metodus: getEmail
+✓ Metodus: setTerulet
+✖ Metodus: emailFrissitese
+- Metodus letezik: OK
+ - Parameterek tipusa: OK
+ - Visszateresi tipus: OK
+ - Modositok: OK
+ - Dobhato kivetelek NEM megfelelok
+✓ Metodus: ujKerulet
+✖ Metodus: ujLakok
+- Metodus letezik: OK
+ - Parameterek tipusa: OK
+ - Visszateresi tipus: OK
+ - Modositok: OK
+ - Dobhato kivetelek NEM megfelelok
+✓ Metodus: getLakosokSzama
+✓ Metodus: nepsuruseg
+[Kerulet belso osztaly tesztelese]
+✓ Adattag: nev
+✓ Adattag: lakosokSzama
+✓ Konstruktor: 3 parameteres
+✓ Metodus: getNev
+✓ Metodus: getLakosokSzama
+✓ Metodus: setLakosokSzama
+✓ Metodus: lakokAranya
+✓ Metodus: toString
+∑ Telepules
+ ✓ Adattagok
+ ✖ Metodusok
+ ✓ Konstruktorok
+
+
+[Megye tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: nev
+✓ Adattag: telepulesek
+✓ Adattag: web
+Konstruktorok
+✓ Konstruktor: 1 parameteres
+Metodusok
+✓ Metodus: ujTelepules
+✓ Metodus: webcimFrissites
+✓ Metodus: ujLakok
+✓ Metodus: keres
+✓ Metodus: lakossag
+✓ Metodus: toString
+∑ Megye
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✖ Minden pretest
+
+Elokeszites: TestTelepuleskezeloException.java
+Elokeszites: TestMegye.java
+Elokeszites: TestTelepules.java
+A megírt osztályok tesztelése
+
+Megye osztály tesztelése
+  ✓ Sikeres: konstruktor (2.0 pont)
+  ✓ Sikeres: ujTelepules (jo email) (2.0 pont)
+  ✓ Sikeres: ujTelepules (csak rossz input) (2.0 pont)
+  ✓ Sikeres: webcimFrissites (jo input) (2.0 pont)
+  ✓ Sikeres: webcimFrissites (hibas input) (2.0 pont)
+  ✓ Sikeres: ujLakok (rossz index) (1.0 pont)
+  ✖ Sikertelen: ujLakok (rossz kerulet) (2.0 pont)
+    - Bovebb hibauzenet Ahhoz, hogy ez jo legyen, szukseg van az ujTelepules metodusra is
+    - Hibaüzenet: expected: <Szeged varosban nem letezik a megadott kerulet!> but was: <Szegedvarosban nem letezik a megadott kerulet!>
+  ✖ Sikertelen: keres (2.0 pont)
+    - Bovebb hibauzenet Ahhoz, hogy ez jo legyen, szukseg van az ujTelepules metodusra is
+    - Hibaüzenet: Nem megfelelo elemet talaltal meg! ==> expected: <0> but was: <1>
+  ✓ Sikeres: lakossag (4.0 pont)
+  ✓ Sikeres: toString (1.0 pont)
+Megye osztály tesztelése befejezve, sikeres: 8, sikertelen: 2
+----------
+
+Telepules osztály tesztelése
+  ✓ Sikeres: nepsuruseg (2.0 pont)
+  ✓ Sikeres: Kerulet - konstruktor (2.0 pont)
+  ✖ Sikertelen: Kerulet - lakokAranya (2.0 pont)
+    - Hibaüzenet: Nem megfelelo a lakok aranya ==> expected: <0.02912> but was: <1.0>
+  ✓ Sikeres: Kerulet - toString (2.0 pont)
+  ✓ Sikeres: Kerulet - Getterek/Szetterek (2.0 pont)
+  ✓ Sikeres: konstruktor (alap) (2.0 pont)
+  ✓ Sikeres: konstruktor (hibas nev) (1.0 pont)
+  ✓ Sikeres: getterek (1.0 pont)
+  ✓ Sikeres: terulet setter (1.0 pont)
+  ✓ Sikeres: ujKerulet (2.0 pont)
+  ✓ Sikeres: getLakosokSzama (2.0 pont)
+Telepules osztály tesztelése befejezve, sikeres: 10, sikertelen: 1
+----------
+
+TelepuleskezeloException osztály tesztelése
+  ✓ Sikeres: Os inicializalasa helyes (2.0 pont)
+  ✓ Sikeres: Okozo getter helyes (1.0 pont)
+TelepuleskezeloException osztály tesztelése befejezve, sikeres: 2, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+36.0 / 51
+[███████████████████████████████████                              ]
+
+A(z) TelepuleskezeloException osztaly tesztjei kozul nem mindegyik futott le (lefutott 2 a(z) 3-bol)
+A(z) Telepules osztaly tesztjei kozul nem mindegyik futott le (lefutott 11 a(z) 15-bol)
+
+Ellenőrizd a pretest kimenetét (fentebb!)
+Futasido: 0:04

@@ -1,0 +1,44 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: KovetelmenySzamito.java  
+New directory generated for output
+Feltoltott .java fajlok: 1
+Ezekbol keszult .class fajlok: 1
+Sikeres feltoltes!
+[KovetelmenySzamito tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: teljesites
+∑ KovetelmenySzamito
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestKovetelmenySzamito.java
+A megírt osztályok tesztelése
+
+KovetelmenySzamito osztály tesztelése
+  ✓ Sikeres: Megfelelő az osztály (1.0 pont)
+  ✓ Sikeres: Megfelelő (létezik a teljesites függvény) (1.0 pont)
+  ✓ Sikeres: A teljesites függvény tesztelése sikertelen esetre (4.0 pont)
+  ✓ Sikeres: A teljesites függvény tesztelése javító esetre (4.0 pont)
+  ✓ Sikeres: A teljesites függvény tesztelése sikeres esetre (4.0 pont)
+KovetelmenySzamito osztály tesztelése befejezve, sikeres: 5, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+14.0 / 14
+[██████████████████████████████████████████████████]
+Futasido: 0:04

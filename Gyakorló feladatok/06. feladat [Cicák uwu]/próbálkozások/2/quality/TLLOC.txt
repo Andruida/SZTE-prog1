@@ -1,0 +1,7 @@
+prog1.gyakorlo.cats.solution.places.implementations.Spar;60
+prog1.gyakorlo.cats.solution.Human;41
+prog1.gyakorlo.cats.solution.places.implementations.CountrysideGarden;38
+prog1.gyakorlo.cats.solution.animals.DomesticCat;32
+prog1.gyakorlo.cats.solution.exceptions.NotEnoughMoneyException;5
+prog1.gyakorlo.cats.solution.exceptions.NotImplementedException;5
+prog1.gyakorlo.cats.solution.exceptions.ProductNotAvailableException;5

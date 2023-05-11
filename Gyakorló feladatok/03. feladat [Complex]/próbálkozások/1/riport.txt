@@ -1,0 +1,53 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Sarkany.java            
+  inflating: Complex.java            
+New directory generated for output
+Feltoltott .java fajlok: 2
+Ezekbol keszult .class fajlok: 2
+Sikeres feltoltes!
+[Complex tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: real
+✓ Adattag: imag
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: toString
+✓ Metodus: add
+✓ Metodus: mul
+✓ Metodus: conjugate
+∑ Complex
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestComplex.java
+A megírt osztályok tesztelése
+
+Complex osztály tesztelése
+  ✓ Sikeres: Megfelelo az osztaly (1.0 pont)
+  ✓ Sikeres: default konstruktor (1.0 pont)
+  ✓ Sikeres: Adattagok inicializalasa (2.0 pont)
+  ✖ Sikertelen: toString tesztelese (2.0 pont)
+    - Hibaüzenet: expected: <8.12-6.9i> but was: <8.12--6.9i>
+  ✓ Sikeres: add metodus tesztelese (2.0 pont)
+  ✓ Sikeres: mul tesztelese (3.0 pont)
+  ✓ Sikeres: conjugate tesztelese (1.0 pont)
+Complex osztály tesztelése befejezve, sikeres: 6, sikertelen: 1
+----------
+
+---------
+Végső pontszám
+10.0 / 12
+[█████████████████████████████████████████                  ]
+Futasido: 0:04

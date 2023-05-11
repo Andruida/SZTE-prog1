@@ -1,0 +1,104 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Ember.java              
+  inflating: Hos.java                
+New directory generated for output
+Feltoltott .java fajlok: 2
+Ezekbol keszult .class fajlok: 2
+Sikeres feltoltes!
+[Ember tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: nev
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: getNev
+✓ Metodus: getEletEro
+✓ Metodus: toString
+✓ Metodus: vajonElMeg
+✓ Metodus: gyogyul
+✓ Metodus: setEletEro
+∑ Ember
+ ✖ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Hos tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: tamadas
+✓ Adattag: sikerSzam
+Konstruktorok
+✓ Konstruktor: 4 parameteres
+Metodusok
+✓ Metodus: getTamadas
+✓ Metodus: getSikerSzam
+✓ Metodus: setSikerSzam
+✓ Metodus: toString
+✓ Metodus: gyogyul
+✓ Metodus: edzes
+✓ Metodus: erosebb
+∑ Hos
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✖ Minden pretest
+
+Elokeszites: TestEmber.java
+Elokeszites: TestHos.java
+A megírt osztályok tesztelése
+
+Ember osztály tesztelése
+  ✖ Sikertelen: getterek: nev, eletero (1.0 pont)
+    - Hibaüzenet: az eletero gettere nem jol mukodik ==> expected: <5> but was: <10>
+  ✖ Sikertelen: default konstruktor (2.0 pont)
+    - Hibaüzenet: az eletero nem helyes ==> expected: <10> but was: <null>
+  ✓ Sikeres: parameteres konstruktor: nev (1.0 pont)
+  ✖ Sikertelen: parameteres konstruktor: eletero (1.0 pont)
+    - Hibaüzenet: az eletero nem helyes ==> expected: <5> but was: <null>
+  ✖ Sikertelen: toString (2.0 pont)
+    - Hibaüzenet: hibas toString ==> expected: <Emberunk neve Jozsi, es jelenleg halott.> but was: <Emberunk neve Jozsi, es jelenleg atlagos az allapota.>
+  ✖ Sikertelen: vajonElMeg (1.0 pont)
+    - Hibaüzenet: hibas eredmeny ==> expected: <false> but was: <true>
+  ✖ Sikertelen: gyogyul (1.0 pont)
+    - Hibaüzenet: hibas eletero ertek ==> expected: <15> but was: <null>
+  ✖ Sikertelen: setter (1.0 pont)
+    - Hibaüzenet: hibas eletero ertek ==> expected: <10> but was: <null>
+Ember osztály tesztelése befejezve, sikeres: 1, sikertelen: 7
+----------
+
+Hos osztály tesztelése
+  ✓ Sikeres: erosebb (2.0 pont)
+  ✓ Sikeres: oroklodes (1.0 pont)
+  ✓ Sikeres: getterek: tamadas, sikerSzam (1.0 pont)
+  ✓ Sikeres: szetter: sikerSzam (1.0 pont)
+  ✖ Sikertelen: parameteres konstruktor, emberi ertekek (1.0 pont)
+    - Hibaüzenet: nem allitja be jol az eleterot ==> expected: <10> but was: <null>
+  ✓ Sikeres: parameteres konstruktor, tamadas es sikerSzam (2.0 pont)
+  ✖ Sikertelen: toString (2.0 pont)
+    - Hibaüzenet: rossz kiiras ==> expected: <Emberunk neve Bela, es jelenleg majd kicsattan az egeszsegtol. Ez az ember egy sarkanyolo hos, tamadasa 9, es eddig 8 darab sarkanyt olt meg.> but was: <Emberunk neve Bela, es jelenleg majd kicsattan az egészségtől. Ez az ember egy sarkanyolo hos, tamadasa 9, es eddig 8 darab sarkanyt olt meg.>
+  ✖ Sikertelen: gyogyul, elo hos (1.0 pont)
+    - Hibaüzenet: rossz eletero valtozas ==> expected: <102> but was: <null>
+  ✖ Sikertelen: gyogyul, felatamado hos (1.0 pont)
+    - Hibaüzenet: rossz eletero valtozas ==> expected: <2> but was: <null>
+  ✓ Sikeres: edzes, elo hos (1.0 pont)
+  ✓ Sikeres: edzes, halott hos (1.0 pont)
+Hos osztály tesztelése befejezve, sikeres: 7, sikertelen: 4
+----------
+
+---------
+Végső pontszám
+10.0 / 24
+[████████████████████                                                            ]
+Futasido: 0:04

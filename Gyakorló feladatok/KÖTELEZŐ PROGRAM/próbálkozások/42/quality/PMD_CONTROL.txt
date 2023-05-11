@@ -1,0 +1,2 @@
+prog1/kotprog/dontstarve/solution/inventory/Inventory.java(66): PMD_ABSALIL: Avoid using a branching statement as the last in a loop.
+prog1/kotprog/dontstarve/solution/inventory/Inventory.java(85): PMD_ABSALIL: Avoid using a branching statement as the last in a loop.

@@ -1,0 +1,12 @@
+Pattern 'shotgun' has been found on 'Action(ActionType type)'
+Source : prog1/kotprog/dontstarve/solution/character/actions/Action.java [Ln:19, Col:5 - Ln:21, Col:6]
+Role 'shotgunMethod' fits on 'Action(ActionType type)' (nodeid '172'), prog1/kotprog/dontstarve/solution/character/actions/Action.java [Ln:19, Col:5 - Ln:21, Col:6]
+
+Pattern 'shotgun' has been found on 'void execute(MutableCharacter executor)'
+Source : prog1/kotprog/dontstarve/solution/character/actions/Action.java [Ln:35, Col:5 - Ln:37, Col:6]
+Role 'shotgunMethod' fits on 'void execute(MutableCharacter executor)' (nodeid '180'), prog1/kotprog/dontstarve/solution/character/actions/Action.java [Ln:35, Col:5 - Ln:37, Col:6]
+
+Pattern 'shotgun' has been found on 'BaseInventory getInventory()'
+Source : prog1/kotprog/dontstarve/solution/character/BaseCharacter.java [Ln:35, Col:5 - Ln:35, Col:34]
+Role 'shotgunMethod' fits on 'BaseInventory getInventory()' (nodeid '233'), prog1/kotprog/dontstarve/solution/character/BaseCharacter.java [Ln:35, Col:5 - Ln:35, Col:34]
+

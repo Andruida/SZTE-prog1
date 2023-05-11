@@ -1,0 +1,228 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: File.java               
+  inflating: FileSystemEntry.java    
+  inflating: Folder.java             
+  inflating: Manager.java            
+  inflating: Namer.java              
+  inflating: RandomNamer.java        
+  inflating: SequentialNamer.java    
+New directory generated for output
+Feltoltott .java fajlok: 7
+Ezekbol keszult .class fajlok: 7
+Sikeres feltoltes!
+[FileSystemEntry tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: parent
+✓ Adattag: name
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: getName
+✓ Metodus: setName
+✓ Metodus: size
+✓ Metodus: fullPath
+∑ FileSystemEntry
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Folder tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: children
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: addChild
+✓ Metodus: size
+∑ Folder
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[File tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: size
+Konstruktorok
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: size
+∑ File
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Namer tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+Konstruktorok
+Metodusok
+✓ Metodus: rename
+∑ Namer
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[SequentialNamer tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: index
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: rename
+∑ SequentialNamer
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[RandomNamer tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: ALPHABET
+✓ Adattag: rnd
+✓ Adattag: length
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: rename
+∑ RandomNamer
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Manager tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: namer
+✓ Adattag: imagesFolder
+✓ Adattag: etcFolder
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: upload
+∑ Manager
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestSequentialNamer.java
+Elokeszites: TestFileSystemEntry.java
+Elokeszites: TestRandomNamer.java
+Elokeszites: TestFolder.java
+Elokeszites: TestManager.java
+Elokeszites: TestFile.java
+Elokeszites: TestNamer.java
+A megírt osztályok tesztelése
+
+File osztály tesztelése
+  ✓ Sikeres: Öröklődés (1.0 pont)
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: size metódus (1.0 pont)
+File osztály tesztelése befejezve, sikeres: 3, sikertelen: 0
+----------
+
+FileSystemEntry osztály tesztelése
+  ✓ Sikeres: Az osztály absztrakt és létezik (1.0 pont)
+  ✓ Sikeres: Konstruktor null parenttel (1.0 pont)
+  ✓ Sikeres: Konstruktor nem null parenttel (1.0 pont)
+  ✓ Sikeres: Name getter/setter (1.0 pont)
+  ✓ Sikeres: size metódus létezik (1.0 pont)
+  ✓ Sikeres: fullPath parent nélkül (1.0 pont)
+  ✓ Sikeres: fullPath egy parenttel (1.0 pont)
+  ✓ Sikeres: fullPath sok parenttel (1.0 pont)
+FileSystemEntry osztály tesztelése befejezve, sikeres: 8, sikertelen: 0
+----------
+
+Folder osztály tesztelése
+  ✓ Sikeres: Öröklődés (1.0 pont)
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: addChild üres tömbre (1.0 pont)
+  ✓ Sikeres: addChild nem üres tömbre (1.0 pont)
+  ✓ Sikeres: size metódus (1.0 pont)
+Folder osztály tesztelése befejezve, sikeres: 5, sikertelen: 0
+----------
+
+Manager osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✖ Sikertelen: upload metódus kép (1.0 pont)
+    - Hibaüzenet: nem megfelelő üzenet stdout-on ==> expected: <Stored maxresdefault.jpg at storage/images/maxresdefault.jpg.bak
+Images size: 161183 bytes
+Etc size: 0 bytes
+> but was: <Stored maxresdefault.jpg.bak at storage/images/maxresdefault.jpg.bak
+Images size: 161183 bytes
+Etc size: 0 bytes
+>
+  ✖ Sikertelen: upload metódus nem kép (1.0 pont)
+    - Hibaüzenet: nem megfelelő üzenet stdout-on ==> expected: <Stored Main.java at tarolo/etc/Main.java.txt
+Images size: 0 bytes
+Etc size: 9997314323 bytes
+> but was: <Stored Main.java.txt at tarolo/etc/Main.java.txt
+Images size: 0 bytes
+Etc size: 9997314323 bytes
+>
+Manager osztály tesztelése befejezve, sikeres: 1, sikertelen: 2
+----------
+
+Namer osztály tesztelése
+  ✓ Sikeres: Az interfész létezik (1.0 pont)
+  ✓ Sikeres: A rename metódus deklarálva van (1.0 pont)
+Namer osztály tesztelése befejezve, sikeres: 2, sikertelen: 0
+----------
+
+RandomNamer osztály tesztelése
+  ✓ Sikeres: Implementálja az interfészt (1.0 pont)
+  ✓ Sikeres: ALPHABET konstans (1.0 pont)
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: rename egy karakterrel (1.0 pont)
+  ✓ Sikeres: rename több karakterrel (1.0 pont)
+RandomNamer osztály tesztelése befejezve, sikeres: 5, sikertelen: 0
+----------
+
+SequentialNamer osztály tesztelése
+  ✓ Sikeres: Implementálja az interfészt (1.0 pont)
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: rename metódus egyszer (1.0 pont)
+  ✓ Sikeres: rename metódus többször (1.0 pont)
+SequentialNamer osztály tesztelése befejezve, sikeres: 4, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+28.0 / 30
+[██████████████████████████████████████████████        ]
+Futasido: 0:05

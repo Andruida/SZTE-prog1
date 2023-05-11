@@ -1,0 +1,341 @@
+package prog1.kotprog.dontstarve.solution.inventory;
+
+import java.util.Map;
+
+import prog1.kotprog.dontstarve.solution.exceptions.InvalidStateException;
+import prog1.kotprog.dontstarve.solution.inventory.items.AbstractItem;
+import prog1.kotprog.dontstarve.solution.inventory.items.CookableItem;
+import prog1.kotprog.dontstarve.solution.inventory.items.EdibleItem;
+import prog1.kotprog.dontstarve.solution.inventory.items.EquippableItem;
+import prog1.kotprog.dontstarve.solution.inventory.items.ItemType;
+import prog1.kotprog.dontstarve.solution.level.MutableField;
+
+/**
+ * Az inventory osztály, amely a játékos tárgyait tárolja.
+ */
+public class Inventory implements BaseInventory {
+
+    /**
+     * Az inventory slotjai.
+     */
+    private AbstractItem[] slots;
+
+    /**
+     * A kézben tartott tárgy.
+     */
+    private EquippableItem localEquippedItem;
+
+    /**
+     * Konstruktor.
+     */
+    public Inventory() {
+        slots = new AbstractItem[10];
+        localEquippedItem = null;
+    }
+
+    @Override
+    public boolean addItem(final AbstractItem itemRef) {
+        if (itemRef == null) {
+            return false;
+        }
+
+        AbstractItem item = itemRef.clone();
+        if (item.getAmount() <= 0) {
+            return true;
+        }
+
+        // van-e ugyanolyan típusú item?
+        for (AbstractItem slot : slots) {
+            if (slot == null || slot.getType() != item.getType() ||
+                slot.getAmount() == slot.getMaxStackAmount()
+            ) {
+                continue;
+            }
+
+            if (slot.getAmount() + item.getAmount() <= slot.getMaxStackAmount()) {
+                slot.addAmount(item.getAmount());
+                itemRef.setAmount(0);
+                return true;
+            }
+
+            int amount = slot.getMaxStackAmount() - slot.getAmount();
+            slot.addAmount(amount);
+            AbstractItem newItem = item.clone();
+            newItem.addAmount(-amount);
+            itemRef.setAmount(newItem.getAmount());
+            return this.addItem(itemRef);
+        }
+
+        // van-e üres slot?
+        for (int i = 0; i < slots.length; i++) {
+            if (slots[i] != null) {
+                continue;
+            }
+            if (item.getAmount() <= item.getMaxStackAmount()) {
+                slots[i] = item;
+                itemRef.setAmount(0);
+                return true;
+            }
+            int amount = item.getMaxStackAmount();
+            AbstractItem newItem = item.clone();
+            item.setAmount(amount);
+            slots[i] = item;
+            newItem.addAmount(-amount);
+            itemRef.setAmount(newItem.getAmount());
+            return this.addItem(itemRef);
+        }
+
+        return false;
+    }
+
+    @Override
+    public AbstractItem dropItem(int index) {
+        if (indexInvalidOrNull(index)) {
+            return null;
+        }
+        AbstractItem droppedItem = slots[index];
+        slots[index] = null;
+        return droppedItem;
+    }
+
+    @Override
+    public boolean removeItem(ItemType type, int amount) {
+        if (type == null) {
+            return false;
+        }
+        if (amount <= 0) {
+            return true;
+        }
+        if (this.getItemAmount(type) < amount) {
+            return false;
+        }
+
+        for (int i = 0; i < slots.length; i++) {
+            if (slots[i] == null || slots[i].getType() != type) {
+                continue;
+            }
+
+            if (slots[i].getAmount() > amount) {
+                slots[i].addAmount(-amount);
+                return true;
+            }
+
+            amount -= slots[i].getAmount();
+            slots[i] = null;
+            if (amount == 0) {
+                return true;
+            }
+        }
+        throw new InvalidStateException();
+    }
+
+    @Override
+    public boolean swapItems(int index1, int index2) {
+        if (indexInvalidOrNull(index1) || indexInvalidOrNull(index2)) {
+            return false;
+        }
+        AbstractItem temp = slots[index1];
+        slots[index1] = slots[index2];
+        slots[index2] = temp;
+        return true;
+    }
+
+    @Override
+    public boolean moveItem(int index, int newIndex) {
+        if (indexInvalidOrNull(index) || indexInvalidOrNOTNull(newIndex)) {
+            return false;
+        }
+        slots[newIndex] = slots[index];
+        slots[index] = null;
+        return true;
+    }
+
+    @Override
+    public boolean combineItems(int index1, int index2) {
+        if (indexInvalidOrNull(index1) || indexInvalidOrNull(index2) || index1 == index2) {
+            return false;
+        }
+        if (slots[index1].getType() != slots[index2].getType()) {
+            return false;
+        }
+        if (slots[index1].getAmount() == slots[index1].getMaxStackAmount()) {
+            return false;
+        }
+        if (slots[index1].getMaxStackAmount() == 1 || slots[index2].getMaxStackAmount() == 1) {
+            return false;
+        }
+
+        int sum = slots[index1].getAmount() + slots[index2].getAmount();
+        if (sum <= slots[index1].getMaxStackAmount()) {
+            slots[index1].addAmount(slots[index2].getAmount());
+            slots[index2] = null;
+            return true;
+        }
+
+        int amount = slots[index1].getMaxStackAmount() - slots[index1].getAmount();
+        slots[index1].addAmount(amount);
+        slots[index2].addAmount(-amount);
+        return true;
+    }
+
+    @Override
+    public boolean equipItem(int index) {
+        if (indexInvalidOrNull(index)) {
+            return false;
+        }
+        if (!(slots[index] instanceof EquippableItem)) {
+            return false;
+        }
+
+        EquippableItem item = (EquippableItem)slots[index];
+        if (localEquippedItem != null) {
+            slots[index] = localEquippedItem;
+        } else {
+            slots[index] = null;
+        }
+
+        localEquippedItem = item;
+        return true;
+    }
+
+    @Override
+    public EquippableItem unequipItem() {
+        EquippableItem item = localEquippedItem;
+        localEquippedItem = null;
+        if (item != null && item.percentage() == 0) {
+            return null;
+        }
+        if (addItem(item)) {
+            return null;
+        }
+        return item;
+    }
+
+    private ItemType consumeItem(int index, boolean cook) {
+        if (indexInvalidOrNull(index)) {
+            return null;
+        }
+        if (cook && !(slots[index] instanceof CookableItem)) {
+            return null;
+        }
+        if (!cook && !(slots[index] instanceof EdibleItem)) {
+            return null;
+        }
+
+        ItemType type = slots[index].getType();
+        slots[index].addAmount(-1);
+        if (slots[index].getAmount() <= 0) {
+            slots[index] = null;
+        }
+
+        return type;
+    }
+
+    @Override
+    public ItemType cookItem(int index) {
+        return consumeItem(index, true);
+    }
+
+    @Override
+    public ItemType eatItem(int index) {
+        return consumeItem(index, false);
+    }
+
+    @Override
+    public int emptySlots() {
+        int emptySlotsAmount = 0;
+        for (AbstractItem slot : slots) {
+            if (slot == null) {
+                emptySlotsAmount++;
+            }
+        }
+        return emptySlotsAmount;
+    }
+
+    @Override
+    public EquippableItem equippedItem() {
+        return localEquippedItem;
+    }
+
+    @Override
+    public AbstractItem getItem(int index) {
+        if (index < 0 || index >= slots.length) {
+            return null;
+        }
+        return slots[index];
+    }
+
+    public int getItemAmount(ItemType type) {
+        int amount = 0;
+        for (AbstractItem slot : slots) {
+            if (slot == null || slot.getType() != type) {
+                continue;
+            }
+            amount += slot.getAmount();
+        }
+        return amount;
+    }
+
+    /**
+     * Ellenőrzi az index helyességét és hogy a slot üres-e. [negatív logika]
+     * @param index az ellenőrizendő index
+     * @return true, ha az index helytelen vagy a slot nem üres, egyébként false
+     */
+    private boolean indexInvalidOrNull(int index) {
+        return index < 0 || index >= slots.length || slots[index] == null;
+    }
+
+    /**
+     * Ellenőrzi az index helyességét és hogy a slot nem üres-e. [negatív logika]
+     * @param index az ellenőrizendő index
+     * @return true, ha az index helytelen vagy a slot üres, egyébként false
+     */
+    private boolean indexInvalidOrNOTNull(int index) {
+        return index < 0 || index >= slots.length || slots[index] != null;
+    }
+
+    @Override
+    public boolean craftItem(ItemType itemType, MutableField field) {
+        if (itemType == null || field == null) {
+            return false;
+        }
+        Map<ItemType, Integer> recipe = itemType.getRecipe();
+        if (recipe == null) {
+            return false;
+        }
+
+        if (itemType == ItemType.FIRE && !field.isEmpty()) {
+            return false;
+        }
+
+        for (Map.Entry<ItemType, Integer> entry : recipe.entrySet()) {
+            if (getItemAmount(entry.getKey()) < entry.getValue()) {
+                return false;
+            }
+        }
+
+        boolean success = true;
+        for (Map.Entry<ItemType, Integer> entry : recipe.entrySet()) {
+            if (!removeItem(entry.getKey(), entry.getValue())) {
+                success = false;
+            }
+        }
+        if (!success) {
+            return false;
+        }
+
+        if (itemType == ItemType.FIRE) {
+            field.setFire(true);
+        } else {
+            AbstractItem item = itemType.instantiate();
+            boolean addSuccess = addItem(item);
+            if (!addSuccess) {
+                field.addItem(item);
+            }
+        }
+
+
+        return true;
+    }
+
+}

@@ -1,0 +1,1 @@
+prog1/kotprog/dontstarve/solution/GameManager.java(65): PMD_UPF: Avoid unused private fields such as 'tutorial'.

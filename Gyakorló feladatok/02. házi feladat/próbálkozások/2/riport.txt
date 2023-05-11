@@ -1,0 +1,58 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Sarkany.java            
+New directory generated for output
+Feltoltott .java fajlok: 1
+Ezekbol keszult .class fajlok: 1
+Sikeres feltoltes!
+[Sarkany tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: eletero
+✓ Adattag: ehes
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: getEletero
+✓ Metodus: isEhes
+✓ Metodus: setEletero
+✓ Metodus: setEhes
+✓ Metodus: toString
+✓ Metodus: vajonElMeg
+✓ Metodus: eszik
+✓ Metodus: harcol
+∑ Sarkany
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestSarkany.java
+A megírt osztályok tesztelése
+
+Sarkany osztály tesztelése
+  ✓ Sikeres: Megfelelo az osztaly (1.0 pont)
+  ✓ Sikeres: default konstuktor tesztelese (1.0 pont)
+  ✓ Sikeres: Parameteres konstruktor tesztelese (1.0 pont)
+  ✓ Sikeres: toString tesztelese (1.0 pont)
+  ✓ Sikeres: vajonElMeg metodus tesztelese (1.0 pont)
+  ✓ Sikeres: eszik metodus tesztelese (1.0 pont)
+  ✓ Sikeres: getterek (1.0 pont)
+  ✓ Sikeres: setterek (1.0 pont)
+  ✓ Sikeres: harcol metodus egyszeru esetek (1.0 pont)
+  ✓ Sikeres: harcol metodus altalanos esetek (1.0 pont)
+Sarkany osztály tesztelése befejezve, sikeres: 10, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+10.0 / 10
+[██████████████████████████████████████████████████]
+Futasido: 0:04

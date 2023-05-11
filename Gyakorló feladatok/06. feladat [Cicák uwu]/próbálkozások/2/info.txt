@@ -1,0 +1,34 @@
+Archive:  feladat.zip
+e505d05269c607367b3568ebc0bcba6ab9a6041c
+   creating: prog1/
+   creating: prog1/gyakorlo/
+   creating: prog1/gyakorlo/cats/
+   creating: prog1/gyakorlo/cats/cats/
+   creating: prog1/gyakorlo/cats/solution/
+  inflating: prog1/gyakorlo/cats/solution/Human.java  
+   creating: prog1/gyakorlo/cats/solution/animals/
+  inflating: prog1/gyakorlo/cats/solution/animals/DomesticCat.java  
+   creating: prog1/gyakorlo/cats/solution/animals/animals/
+   creating: prog1/gyakorlo/cats/solution/annotations/
+  inflating: prog1/gyakorlo/cats/solution/annotations/Testable.java  
+   creating: prog1/gyakorlo/cats/solution/annotations/annotations/
+  inflating: prog1/gyakorlo/cats/solution/annotations/package-info.java  
+   creating: prog1/gyakorlo/cats/solution/exceptions/
+  inflating: prog1/gyakorlo/cats/solution/exceptions/NotEnoughMoneyException.java  
+  inflating: prog1/gyakorlo/cats/solution/exceptions/NotImplementedException.java  
+  inflating: prog1/gyakorlo/cats/solution/exceptions/ProductNotAvailableException.java  
+   creating: prog1/gyakorlo/cats/solution/exceptions/exceptions/
+  inflating: prog1/gyakorlo/cats/solution/exceptions/package-info.java  
+  inflating: prog1/gyakorlo/cats/solution/package-info.java  
+   creating: prog1/gyakorlo/cats/solution/places/
+  inflating: prog1/gyakorlo/cats/solution/places/Garden.java  
+  inflating: prog1/gyakorlo/cats/solution/places/Supermarket.java  
+   creating: prog1/gyakorlo/cats/solution/places/implementations/
+  inflating: prog1/gyakorlo/cats/solution/places/implementations/CountrysideGarden.java  
+  inflating: prog1/gyakorlo/cats/solution/places/implementations/Spar.java  
+   creating: prog1/gyakorlo/cats/solution/places/implementations/implementations/
+  inflating: prog1/gyakorlo/cats/solution/places/implementations/package-info.java  
+   creating: prog1/gyakorlo/cats/solution/places/places/
+   creating: prog1/gyakorlo/cats/solution/solution/
+   creating: prog1/gyakorlo/gyakorlo/
+   creating: prog1/prog1/

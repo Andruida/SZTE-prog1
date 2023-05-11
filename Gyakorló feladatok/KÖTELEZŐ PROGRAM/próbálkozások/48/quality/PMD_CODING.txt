@@ -1,0 +1,2 @@
+prog1/kotprog/dontstarve/solution/character/Brain.java(11): PMD_IF: Private field 'character' could be made final; it is only initialized in the declaration or constructor.
+prog1/kotprog/dontstarve/solution/level/Field.java(61): PMD_IF: Private field 'itemList' could be made final; it is only initialized in the declaration or constructor.

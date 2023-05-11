@@ -1,0 +1,1 @@
+prog1/kotprog/dontstarve/solution/character/Brain.java(21): PMD_UPF: Avoid unused private fields such as 'character'.

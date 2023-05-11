@@ -1,0 +1,3 @@
+prog1/gyakorlo/cats/solution/places/implementations/CountrysideGarden.java(26): PMD_UDO: Explicit type arguments can be replaced by Diamond Operator
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java(26): PMD_UDO: Explicit type arguments can be replaced by Diamond Operator
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java(54): PMD_ESNIL: An empty statement (semicolon) not part of a loop

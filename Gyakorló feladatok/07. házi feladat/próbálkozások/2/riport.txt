@@ -1,0 +1,183 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: BestPriceFinder.java    
+  inflating: ExtremeShopping.java    
+  inflating: FavouriteShopSet.java   
+  inflating: Product.java            
+  inflating: ShoppingList.java       
+New directory generated for output
+Feltoltott .java fajlok: 5
+Ezekbol keszult .class fajlok: 5
+Sikeres feltoltes!
+[Product tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: name
+✓ Adattag: amount
+✓ Adattag: important
+Konstruktorok
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: getName
+✓ Metodus: setName
+✓ Metodus: getAmount
+✓ Metodus: setAmount
+✓ Metodus: isImportant
+✓ Metodus: setImportant
+∑ Product
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[ShoppingList tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: items
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: addProduct
+✓ Metodus: countProducts
+✓ Metodus: getProduct
+✓ Metodus: printProducts
+✓ Metodus: delete
+✓ Metodus: deleteUnimportant
+∑ ShoppingList
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[FavouriteShopSet tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: shops
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: addShop
+✓ Metodus: countShops
+✓ Metodus: isFavourite
+✓ Metodus: printShops
+✓ Metodus: delete
+∑ FavouriteShopSet
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[BestPriceFinder tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: bestBuys
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: addProduct
+✓ Metodus: getShopFor
+✓ Metodus: printBestBuys
+✓ Metodus: deleteShop
+∑ BestPriceFinder
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[ExtremeShopping tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+✓ Adattag: extremeList
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: addShoppingList
+✓ Metodus: printShoppingLists
+∑ ExtremeShopping
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestExtremeShopping.java
+Elokeszites: TestShoppingList.java
+Elokeszites: TestProduct.java
+Elokeszites: TestBestPriceFinder.java
+Elokeszites: TestFavouriteShopSet.java
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+A megírt osztályok tesztelése
+
+BestPriceFinder osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: addProduct metodus (1.0 pont)
+  ✓ Sikeres: getShopFor metodus (1.0 pont)
+  ✖ Sikertelen: printBestBuys metodus (2.0 pont)
+    - Hibaüzenet: nem megfelelo a kiiras ==> expected: <true> but was: <false>
+  ✓ Sikeres: deleteShop metodus, torles (1.0 pont)
+  ✓ Sikeres: deleteShop metodus, visszateresi ertek (1.0 pont)
+BestPriceFinder osztály tesztelése befejezve, sikeres: 5, sikertelen: 1
+----------
+
+ExtremeShopping osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: addShoppingList metodus (1.0 pont)
+  ✓ Sikeres: printShoppingLists metodus (2.0 pont)
+ExtremeShopping osztály tesztelése befejezve, sikeres: 3, sikertelen: 0
+----------
+
+FavouriteShopSet osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: addShop metodus (1.0 pont)
+  ✓ Sikeres: countShops metodus (1.0 pont)
+  ✓ Sikeres: isFavourite metodus (1.0 pont)
+  ✓ Sikeres: printShops metodus (1.0 pont)
+  ✓ Sikeres: delete metodus (1.0 pont)
+FavouriteShopSet osztály tesztelése befejezve, sikeres: 6, sikertelen: 0
+----------
+
+Product osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: getter-ek es setter-ek (1.0 pont)
+Product osztály tesztelése befejezve, sikeres: 2, sikertelen: 0
+----------
+
+ShoppingList osztály tesztelése
+  ✓ Sikeres: Konstruktor (1.0 pont)
+  ✓ Sikeres: addProduct metodus (1.0 pont)
+  ✓ Sikeres: countProduct metodus (1.0 pont)
+  ✓ Sikeres: getProduct metodus, letezo index (1.0 pont)
+  ✓ Sikeres: getProduct metodus, nem letezo index (1.0 pont)
+  ✓ Sikeres: printProducts metodus (1.0 pont)
+  ✓ Sikeres: delete metodus (1.0 pont)
+  ✖ Sikertelen: deleteUnimportant metodus, torles (1.0 pont)
+    - Hibaüzenet: az items lista elemszama nem megfelelo ==> expected: <2> but was: <3>
+  ✖ Sikertelen: deleteUnimportant metodus, visszateresi ertek (1.0 pont)
+    - Hibaüzenet: nem megfelelo a visszateresi ertek ==> expected: <2> but was: <1>
+ShoppingList osztály tesztelése befejezve, sikeres: 7, sikertelen: 2
+----------
+
+---------
+Végső pontszám
+24.0 / 28
+[██████████████████████████████████████████                ]
+Futasido: 0:06

@@ -1,0 +1,1 @@
+prog1/kotprog/dontstarve/solution/GameManager.java:350: Line has trailing spaces. [RegexpSingleline]

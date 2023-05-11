@@ -1,0 +1,5 @@
+prog1/kotprog/dontstarve/solution/character/actions/ActionInteract.java:33: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/character/Character.java:238: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/character/Character.java:241: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/character/Character.java:254: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/GameManager.java:359: Line has trailing spaces. [RegexpSingleline]

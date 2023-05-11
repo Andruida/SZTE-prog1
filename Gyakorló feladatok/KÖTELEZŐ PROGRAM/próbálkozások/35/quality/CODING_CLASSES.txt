@@ -1,0 +1,6 @@
+prog1/kotprog/dontstarve/solution/level/Field.java:25:5: Static variable definition in wrong order. [DeclarationOrder]
+prog1/kotprog/dontstarve/solution/level/Field.java:30:5: Static variable definition in wrong order. [DeclarationOrder]
+prog1/kotprog/dontstarve/solution/level/Field.java:35:5: Static variable definition in wrong order. [DeclarationOrder]
+prog1/kotprog/dontstarve/solution/level/Field.java:40:5: Static variable definition in wrong order. [DeclarationOrder]
+prog1/kotprog/dontstarve/solution/level/Field.java:45:5: Static variable definition in wrong order. [DeclarationOrder]
+prog1/kotprog/dontstarve/solution/level/Field.java:56:5: Static variable definition in wrong order. [DeclarationOrder]

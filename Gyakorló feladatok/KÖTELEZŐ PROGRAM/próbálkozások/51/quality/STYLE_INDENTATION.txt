@@ -1,0 +1,4 @@
+prog1/kotprog/dontstarve/solution/character/Brain.java:32: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/level/MapColors.java:1: File does not end with a newline. [NewlineAtEndOfFile]
+prog1/kotprog/dontstarve/solution/GameManager.java:373: Line has trailing spaces. [RegexpSingleline]
+prog1/kotprog/dontstarve/solution/GameManager.java:375: Line has trailing spaces. [RegexpSingleline]

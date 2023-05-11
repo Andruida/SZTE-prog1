@@ -1,0 +1,32 @@
+Pattern 'LongFunction' has been found on 'float getSpeed()'
+Source : prog1/kotprog/dontstarve/solution/character/Character.java [Ln:81, Col:5 - Ln:106, Col:6]
+Role 'longFunc' fits on 'float getSpeed()' (nodeid '572'), prog1/kotprog/dontstarve/solution/character/Character.java [Ln:81, Col:5 - Ln:106, Col:6]
+
+Pattern 'LongFunction' has been found on 'Position joinCharacter(String name, boolean player)'
+Source : prog1/kotprog/dontstarve/solution/GameManager.java [Ln:120, Col:5 - Ln:146, Col:6]
+Role 'longFunc' fits on 'Position joinCharacter(String name, boolean player)' (nodeid '737'), prog1/kotprog/dontstarve/solution/GameManager.java [Ln:120, Col:5 - Ln:146, Col:6]
+
+Pattern 'LongFunction' has been found on 'Position generatePosition()'
+Source : prog1/kotprog/dontstarve/solution/GameManager.java [Ln:179, Col:5 - Ln:243, Col:6]
+Role 'longFunc' fits on 'Position generatePosition()' (nodeid '749'), prog1/kotprog/dontstarve/solution/GameManager.java [Ln:179, Col:5 - Ln:243, Col:6]
+
+Pattern 'LongFunction' has been found on 'void tick(Action action)'
+Source : prog1/kotprog/dontstarve/solution/GameManager.java [Ln:323, Col:5 - Ln:356, Col:6]
+Role 'longFunc' fits on 'void tick(Action action)' (nodeid '835'), prog1/kotprog/dontstarve/solution/GameManager.java [Ln:323, Col:5 - Ln:356, Col:6]
+
+Pattern 'LongFunction' has been found on 'boolean addItem(AbstractItem itemRef)'
+Source : prog1/kotprog/dontstarve/solution/inventory/Inventory.java [Ln:36, Col:5 - Ln:89, Col:6]
+Role 'longFunc' fits on 'boolean addItem(AbstractItem itemRef)' (nodeid '907'), prog1/kotprog/dontstarve/solution/inventory/Inventory.java [Ln:36, Col:5 - Ln:89, Col:6]
+
+Pattern 'LongFunction' has been found on 'boolean craftItem(ItemType itemType, MutableField field)'
+Source : prog1/kotprog/dontstarve/solution/inventory/Inventory.java [Ln:297, Col:5 - Ln:339, Col:6]
+Role 'longFunc' fits on 'boolean craftItem(ItemType itemType, MutableField field)' (nodeid '963'), prog1/kotprog/dontstarve/solution/inventory/Inventory.java [Ln:297, Col:5 - Ln:339, Col:6]
+
+Pattern 'LongFunction' has been found on 'AbstractItem instantiate(int amount)'
+Source : prog1/kotprog/dontstarve/solution/inventory/items/ItemType.java [Ln:106, Col:5 - Ln:136, Col:6]
+Role 'longFunc' fits on 'AbstractItem instantiate(int amount)' (nodeid '1044'), prog1/kotprog/dontstarve/solution/inventory/items/ItemType.java [Ln:106, Col:5 - Ln:136, Col:6]
+
+Pattern 'LongFunction' has been found on 'AbstractItem interact(EquippableItem tool)'
+Source : prog1/kotprog/dontstarve/solution/level/Field.java [Ln:217, Col:5 - Ln:247, Col:6]
+Role 'longFunc' fits on 'AbstractItem interact(EquippableItem tool)' (nodeid '1382'), prog1/kotprog/dontstarve/solution/level/Field.java [Ln:217, Col:5 - Ln:247, Col:6]
+

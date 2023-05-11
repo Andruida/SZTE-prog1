@@ -1,0 +1,2 @@
+prog1/gyakorlo/cats/solution/animals/DomesticCat.java:46:61: '12' is a magic number. [MagicNumber]
+prog1/gyakorlo/cats/solution/animals/DomesticCat.java:75:69: '8' is a magic number. [MagicNumber]

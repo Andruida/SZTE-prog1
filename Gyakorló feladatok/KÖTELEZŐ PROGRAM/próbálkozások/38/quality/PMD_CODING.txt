@@ -1,0 +1,1 @@
+prog1/kotprog/dontstarve/solution/level/Field.java(61): PMD_IF: Private field 'itemList' could be made final; it is only initialized in the declaration or constructor.

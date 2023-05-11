@@ -1,0 +1,94 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Ember.java              
+  inflating: Hos.java                
+New directory generated for output
+Feltoltott .java fajlok: 2
+Ezekbol keszult .class fajlok: 2
+Sikeres feltoltes!
+[Ember tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: nev
+✓ Adattag: eletEro
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: getNev
+✓ Metodus: getEletEro
+✓ Metodus: toString
+✓ Metodus: vajonElMeg
+✓ Metodus: gyogyul
+✓ Metodus: setEletEro
+∑ Ember
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Hos tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: tamadas
+✓ Adattag: sikerSzam
+Konstruktorok
+✓ Konstruktor: 4 parameteres
+Metodusok
+✓ Metodus: getTamadas
+✓ Metodus: getSikerSzam
+✓ Metodus: setSikerSzam
+✓ Metodus: toString
+✓ Metodus: gyogyul
+✓ Metodus: edzes
+✓ Metodus: erosebb
+∑ Hos
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestEmber.java
+Elokeszites: TestHos.java
+A megírt osztályok tesztelése
+
+Ember osztály tesztelése
+  ✓ Sikeres: getterek: nev, eletero (1.0 pont)
+  ✓ Sikeres: default konstruktor (2.0 pont)
+  ✓ Sikeres: parameteres konstruktor: nev (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor: eletero (1.0 pont)
+  ✓ Sikeres: toString (2.0 pont)
+  ✓ Sikeres: vajonElMeg (1.0 pont)
+  ✓ Sikeres: gyogyul (1.0 pont)
+  ✓ Sikeres: setter (1.0 pont)
+Ember osztály tesztelése befejezve, sikeres: 8, sikertelen: 0
+----------
+
+Hos osztály tesztelése
+  ✓ Sikeres: erosebb (2.0 pont)
+  ✓ Sikeres: oroklodes (1.0 pont)
+  ✓ Sikeres: getterek: tamadas, sikerSzam (1.0 pont)
+  ✓ Sikeres: szetter: sikerSzam (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor, emberi ertekek (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor, tamadas es sikerSzam (2.0 pont)
+  ✓ Sikeres: toString (2.0 pont)
+  ✓ Sikeres: gyogyul, elo hos (1.0 pont)
+  ✓ Sikeres: gyogyul, felatamado hos (1.0 pont)
+  ✓ Sikeres: edzes, elo hos (1.0 pont)
+  ✓ Sikeres: edzes, halott hos (1.0 pont)
+Hos osztály tesztelése befejezve, sikeres: 11, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+24.0 / 24
+[██████████████████████████████████████████████████]
+Futasido: 0:04

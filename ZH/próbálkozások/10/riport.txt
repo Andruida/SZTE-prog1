@@ -1,0 +1,196 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Album.java              
+  inflating: BluesAlbum.java         
+  inflating: HangzasiKivetel.java    
+  inflating: KonnyuzeneiAlbum.java   
+  inflating: LemezBolt.java          
+New directory generated for output
+Feltoltott .java fajlok: 5
+Ezekbol keszult .class fajlok: 5
+Sikeres feltoltes!
+[HangzasiKivetel tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: hibaSzam
+✖ Az osztaly mukodese szempontjabol fontos adattag hianyzik.
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+∑ HangzasiKivetel
+ ✖ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Album tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: bevetel
+✓ Adattag: kiado
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: szponzorKereses
+✓ Metodus: getBevetel
+✓ Metodus: getKiado
+✓ Metodus: setBevetel
+∑ Album
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[KonnyuzeneiAlbum tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: szamokHossza
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: legrovidebbSzam
+✓ Metodus: szponzorKereses
+✓ Metodus: toString
+✓ Metodus: getSzamokHossza
+✓ Metodus: setSzamokHossza
+∑ KonnyuzeneiAlbum
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[BluesAlbum tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: eloadok
+Konstruktorok
+✓ Konstruktor: 4 parameteres
+Metodusok
+✓ Metodus: eloadokFelvetele
+✓ Metodus: duplaSzam
+✓ Metodus: szponzorKereses
+✓ Metodus: setBevetel
+∑ BluesAlbum
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[LemezBolt tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: albumok
+Konstruktorok
+✓ Konstruktor: 1 parameteres
+Metodusok
+✓ Metodus: ujAlbumokFelvetele
+✓ Metodus: ujAlbum
+✓ Metodus: lejatszas
+✓ Metodus: legrovidebbSzamok
+✓ Metodus: osszesKiado
+∑ LemezBolt
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✖ Minden pretest
+
+Elokeszites: TestHangzasiKivetel.java
+Elokeszites: TestLemezBolt.java
+Elokeszites: TestBluesAlbum.java
+Elokeszites: TestKonnyuzeneiAlbum.java
+Elokeszites: TestAlbum.java
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+A megírt osztályok tesztelése
+
+Album osztály tesztelése
+  ✓ Sikeres: az osztály absztrakt (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor (1.0 pont)
+  ✓ Sikeres: getterek es setterek (1.0 pont)
+  ✓ Sikeres: absztrakt metodus (1.0 pont)
+Album osztály tesztelése befejezve, sikeres: 4, sikertelen: 0
+----------
+
+BluesAlbum osztály tesztelése
+  ✓ Sikeres: osztaly letrehozasa (1.0 pont)
+  ✓ Sikeres: adattagok leteznek (1.0 pont)
+  ✓ Sikeres: metodusok leteznek (0.0 pont)
+  ✓ Sikeres: parameteres konstruktor (1.0 pont)
+  ✓ Sikeres: eloadokFelvetele, igaz esetben, visszaadott ertek (1.0 pont)
+  ✓ Sikeres: eloadokFelvetele, igaz esetben, az elem bekerul a halmazba (1.0 pont)
+  ✓ Sikeres: eloadokFelvetele, hamis esetben (1.0 pont)
+  ✓ Sikeres: duplaSzam, eredmeny (1.0 pont)
+  ✓ Sikeres: duplaSzam, igaz eredmeny eseten (1.0 pont)
+  ✓ Sikeres: duplaSzam, hamis eredmeny eseten (1.0 pont)
+  ✓ Sikeres: szponzorKereses, os meghivasa (1.0 pont)
+  ✓ Sikeres: szponzorKereses, felulirt mukodes (1.0 pont)
+  ✓ Sikeres: setter feltetele (1.0 pont)
+BluesAlbum osztály tesztelése befejezve, sikeres: 13, sikertelen: 0
+----------
+
+HangzasiKivetel osztály tesztelése
+  ✓ Sikeres: osztaly letrehozasa, helyes oroklodes (1.0 pont)
+  ✓ Sikeres: konstruktor os hivasa (1.0 pont)
+  ✓ Sikeres: konstruktor feltetele (1.0 pont)
+HangzasiKivetel osztály tesztelése befejezve, sikeres: 3, sikertelen: 0
+----------
+
+KonnyuzeneiAlbum osztály tesztelése
+  ✓ Sikeres: osztaly letrehozasa (1.0 pont)
+  ✓ Sikeres: adattagok leteznek, adattagok lathatosaga helyes (1.0 pont)
+  ✓ Sikeres: metodusok leteznek (1.0 pont)
+  ✓ Sikeres: default konstruktor (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor feltetel nelkul (1.0 pont)
+  ✓ Sikeres: parameteres konstruktor feltetele (1.0 pont)
+  ✓ Sikeres: legrovidebbSzam, egyszeru eset (1.0 pont)
+  ✓ Sikeres: legrovidebbSzam, specialis tombre (1.0 pont)
+  ✓ Sikeres: szponzorKereses, kiiratas standard output (1.0 pont)
+  ✓ Sikeres: szponzorKereses, kiiratas hibacsatornara (1.0 pont)
+  ✓ Sikeres: getterek es setterek (1.0 pont)
+  ✓ Sikeres: toString (1.0 pont)
+KonnyuzeneiAlbum osztály tesztelése befejezve, sikeres: 12, sikertelen: 0
+----------
+
+LemezBolt osztály tesztelése
+  ✓ Sikeres: osztaly rendben (1.0 pont)
+  ✓ Sikeres: adattagok rendben (1.0 pont)
+  ✓ Sikeres: konstruktor (1.0 pont)
+  ✓ Sikeres: ujAlbumokFelvetele, egyszeru eset (1.0 pont)
+  ✓ Sikeres: ujAlbumokFelvetele, bonyolult eset (1.0 pont)
+  ✓ Sikeres: ujAlbumokFelvetele, eredmeny, (1.0 pont)
+  ✓ Sikeres: ujAlbum, eredmeny (1.0 pont)
+  ✓ Sikeres: ujAlbum, igaz eset mukodes  (1.0 pont)
+  ✓ Sikeres: ujAlbum, hamis eset mukodes (1.0 pont)
+  ✓ Sikeres: lejatszas, kivetelt kell dobni (1.0 pont)
+  ✓ Sikeres: lejatszas, nem kell kivetelt dobni (1.0 pont)
+  ✓ Sikeres: legrovidebbSzamok, egyszeru (1.0 pont)
+  ✓ Sikeres: legrovidebbSzamok, bonyolult (1.0 pont)
+  ✓ Sikeres: legrovidebbSzamok, eredmeny (1.0 pont)
+  ✓ Sikeres: osszesKiado, a fajl letrejon (1.0 pont)
+  ✓ Sikeres: osszesKiado, a fajl hossza helyes (1.0 pont)
+  ✓ Sikeres: osszesKiado, a fajl tartalma helyes egyszeru esetben (1.0 pont)
+  ✓ Sikeres: osszesKiado, a fajl tartalma helyes normal esetben (1.0 pont)
+  ✓ Sikeres: osszesKiado, a fajl tartalma helyes bonyolult esetben (1.0 pont)
+LemezBolt osztály tesztelése befejezve, sikeres: 19, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+50.0 / 50
+[██████████████████████████████████████████████████]
+Futasido: 0:07

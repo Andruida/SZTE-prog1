@@ -1,0 +1,4 @@
+Pattern 'featureEnvy' has been found on 'Action think()'
+Source : prog1/kotprog/dontstarve/solution/character/Brain.java [Ln:27, Col:5 - Ln:48, Col:6]
+Role 'envyMethod' fits on 'Action think()' (nodeid '548'), prog1/kotprog/dontstarve/solution/character/Brain.java [Ln:27, Col:5 - Ln:48, Col:6]
+

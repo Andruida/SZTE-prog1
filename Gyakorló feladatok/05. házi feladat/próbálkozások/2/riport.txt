@@ -1,0 +1,134 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Bevasarlas.java         
+  inflating: Megbeszeles.java        
+  inflating: Teendo.java             
+New directory generated for output
+Feltoltott .java fajlok: 3
+Ezekbol keszult .class fajlok: 3
+Sikeres feltoltes!
+[Teendo tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: nev
+✓ Adattag: ido
+✓ Adattag: prioritas
+✓ Adattag: teljesitettuk
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: getNev
+✓ Metodus: setNev
+✓ Metodus: getIdo
+✓ Metodus: setIdo
+✓ Metodus: getPrioritas
+✓ Metodus: setPrioritas
+✓ Metodus: isTeljesitettuk
+✓ Metodus: atvalt
+✓ Metodus: toString
+✓ Metodus: legfontosabb
+∑ Teendo
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Bevasarlas tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: miket
+✓ Adattag: maxOsszeg
+Konstruktorok
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: getMiket
+✓ Metodus: getMaxOsszeg
+✓ Metodus: setMaxOsszeg
+✓ Metodus: setMiket
+✓ Metodus: frissit
+✓ Metodus: toString
+∑ Bevasarlas
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Megbeszeles tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: kivel
+✓ Adattag: hol
+✓ Adattag: MEGBESZELES_DARAB
+Konstruktorok
+✓ Konstruktor: 3 parameteres
+Metodusok
+✓ Metodus: getKivel
+✓ Metodus: getHol
+✓ Metodus: setKivel
+✓ Metodus: setHol
+✓ Metodus: toString
+✓ Metodus: setPrioritas
+∑ Megbeszeles
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestTeendo.java
+Elokeszites: TestMegbeszeles.java
+Elokeszites: TestBevasarlas.java
+A megírt osztályok tesztelése
+
+Bevasarlas osztály tesztelése
+  ✓ Sikeres: toString (1.0 pont)
+  ✓ Sikeres: Parameteres konstruktor (1.0 pont)
+  ✓ Sikeres: Oroklodes (1.0 pont)
+  ✓ Sikeres: Getterek/Szetterek: miket, maxOsszeg (1.0 pont)
+  ✖ Sikertelen: prioritas (2.0 pont)
+    - Hibaüzenet: Alapbol nem jo priorast kap ==> expected: <3> but was: <0>
+  ✓ Sikeres: frissit uj (2.0 pont)
+  ✓ Sikeres: <torol> (3.0 pont)
+Bevasarlas osztály tesztelése befejezve, sikeres: 6, sikertelen: 1
+----------
+
+Megbeszeles osztály tesztelése
+  ✓ Sikeres: toString (1.0 pont)
+  ✖ Sikertelen: Parameteres konstruktor (1.0 pont)
+    - Hibaüzenet: A prioritas nem megfelelo ==> expected: <1> but was: <0>
+  ✖ Sikertelen: prioritas (2.0 pont)
+    - Hibaüzenet: Alapbol nem jo priorast kap ==> expected: <1> but was: <0>
+  ✓ Sikeres: Megbeszeles darabszam (2.0 pont)
+  ✓ Sikeres: Megbeszeles darabszama (3.0 pont)
+  ✓ Sikeres: Getterek/Szetterek: kivel, hol (2.0 pont)
+Megbeszeles osztály tesztelése befejezve, sikeres: 4, sikertelen: 2
+----------
+
+Teendo osztály tesztelése
+  ✓ Sikeres: Adattagok helyesek (0.0 pont)
+  ✓ Sikeres: Parameter nelkuli konstruktor (1.0 pont)
+  ✓ Sikeres: Parameteres konstruktor (1.0 pont)
+  ✓ Sikeres: Parameteres konstruktor (invalid prioritas) (1.0 pont)
+  ✓ Sikeres: Getterek/szetterek: nev, idopont (2.0 pont)
+  ✓ Sikeres: Getter/szetter: prioritas (2.0 pont)
+  ✓ Sikeres: Teljesitettuk getter/atvalt (2.0 pont)
+  ✓ Sikeres: toString (1.0 pont)
+  ✓ Sikeres: legfontosabb kivalasztasa (3.0 pont)
+Teendo osztály tesztelése befejezve, sikeres: 9, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+30.0 / 35
+[██████████████████████████████████████████                ]
+Futasido: 0:04

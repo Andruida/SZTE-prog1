@@ -1,0 +1,7 @@
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java:32:42: '{' is followed by whitespace. [NoWhitespaceAfter]
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java:43: Line has trailing spaces. [RegexpSingleline]
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java:56: Line has trailing spaces. [RegexpSingleline]
+prog1/gyakorlo/cats/solution/places/implementations/CountrysideGarden.java:12: Line has trailing spaces. [RegexpSingleline]
+prog1/gyakorlo/cats/solution/places/implementations/CountrysideGarden.java:17: Line has trailing spaces. [RegexpSingleline]
+prog1/gyakorlo/cats/solution/exceptions/NotEnoughMoneyException.java:7: Line has trailing spaces. [RegexpSingleline]
+prog1/gyakorlo/cats/solution/animals/DomesticCat.java:24: Line has trailing spaces. [RegexpSingleline]

@@ -1,0 +1,10 @@
+<root_package>;7
+prog1;7
+prog1.gyakorlo;7
+prog1.gyakorlo.cats;7
+prog1.gyakorlo.cats.solution;7
+prog1.gyakorlo.cats.solution.exceptions;3
+prog1.gyakorlo.cats.solution.places;2
+prog1.gyakorlo.cats.solution.places.implementations;2
+prog1.gyakorlo.cats.solution.animals;1
+prog1.gyakorlo.cats.solution.annotations;0

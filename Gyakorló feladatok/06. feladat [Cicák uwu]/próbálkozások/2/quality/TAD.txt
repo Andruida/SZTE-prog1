@@ -1,0 +1,10 @@
+prog1.gyakorlo.cats.solution.animals;1
+prog1.gyakorlo.cats.solution.annotations;1
+prog1.gyakorlo.cats.solution.exceptions;1
+<root_package>;0.75
+prog1;0.75
+prog1.gyakorlo;0.75
+prog1.gyakorlo.cats;0.75
+prog1.gyakorlo.cats.solution;0.75
+prog1.gyakorlo.cats.solution.places;0.566667
+prog1.gyakorlo.cats.solution.places.implementations;0.1875

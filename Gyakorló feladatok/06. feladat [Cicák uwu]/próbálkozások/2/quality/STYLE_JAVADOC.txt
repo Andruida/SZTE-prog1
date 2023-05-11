@@ -1,0 +1,2 @@
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java:11: First sentence should end with a period. [JavadocStyle]
+prog1/gyakorlo/cats/solution/Human.java:24: First sentence should end with a period. [JavadocStyle]

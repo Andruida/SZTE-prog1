@@ -1,0 +1,1 @@
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java(14): PMD_SCN: Avoid short class names like Spar

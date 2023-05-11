@@ -1,0 +1,4 @@
+A funkcionalitás tesztek nem futtathatóak, mivel a kötelező funkcionalitások nem megfelelőek
+A kódminőséggel kapcsolatos tesztek nem futtathatóak, mivel a kötelező funkcionalitások nem megfelelőek
+
+

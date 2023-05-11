@@ -1,0 +1,4 @@
+Pattern 'featureEnvy' has been found on 'Field(int color)'
+Source : prog1/kotprog/dontstarve/solution/level/Field.java [Ln:67, Col:5 - Ln:96, Col:6]
+Role 'envyMethod' fits on 'Field(int color)' (nodeid '809'), prog1/kotprog/dontstarve/solution/level/Field.java [Ln:67, Col:5 - Ln:96, Col:6]
+

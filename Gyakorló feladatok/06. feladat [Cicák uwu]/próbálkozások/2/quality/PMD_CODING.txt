@@ -1,0 +1,4 @@
+prog1/gyakorlo/cats/solution/Human.java(14): PMD_IF: Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+prog1/gyakorlo/cats/solution/Human.java(22): PMD_IF: Private field 'favouriteSupermarket' could be made final; it is only initialized in the declaration or constructor.
+prog1/gyakorlo/cats/solution/places/implementations/CountrysideGarden.java(20): PMD_IF: Private field 'cats' could be made final; it is only initialized in the declaration or constructor.
+prog1/gyakorlo/cats/solution/places/implementations/Spar.java(20): PMD_IF: Private field 'products' could be made final; it is only initialized in the declaration or constructor.

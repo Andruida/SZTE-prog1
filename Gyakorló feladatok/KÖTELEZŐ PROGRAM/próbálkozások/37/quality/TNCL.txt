@@ -1,0 +1,13 @@
+<root_package>;41
+prog1;41
+prog1.kotprog;41
+prog1.kotprog.dontstarve;41
+prog1.kotprog.dontstarve.solution;41
+prog1.kotprog.dontstarve.solution.character;17
+prog1.kotprog.dontstarve.solution.inventory;17
+prog1.kotprog.dontstarve.solution.character.actions;16
+prog1.kotprog.dontstarve.solution.inventory.items;16
+prog1.kotprog.dontstarve.solution.level;3
+prog1.kotprog.dontstarve.solution.exceptions;2
+prog1.kotprog.dontstarve.solution.utility;1
+prog1.kotprog.dontstarve.solution.annotations;0

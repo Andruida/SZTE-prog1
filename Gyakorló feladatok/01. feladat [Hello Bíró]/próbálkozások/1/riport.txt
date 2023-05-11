@@ -1,0 +1,42 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Hello.java              
+New directory generated for output
+Feltoltott .java fajlok: 1
+Ezekbol keszult .class fajlok: 1
+Sikeres feltoltes!
+[Hello tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+ ✓ Osztály módosítók
+Adattagok
+Konstruktorok
+✓ Konstruktor: 0 parameteres
+Metodusok
+✓ Metodus: main
+∑ Hello
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✓ Minden pretest
+
+Elokeszites: TestHello.java
+A megírt osztályok tesztelése
+
+Hello osztály tesztelése
+  ✓ Sikeres: Megfelelo az osztaly (2.0 pont)
+  ✓ Sikeres: Megfelelo a main fuggveny (2.0 pont)
+  ✓ Sikeres: Jol mukodik a main fuggveny (6.0 pont)
+Hello osztály tesztelése befejezve, sikeres: 3, sikertelen: 0
+----------
+
+---------
+Végső pontszám
+10.0 / 10
+[██████████████████████████████████████████████████]
+Futasido: 0:04

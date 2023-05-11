@@ -1,0 +1,1 @@
+prog1/kotprog/dontstarve/solution/inventory/items/AbstractItem.java(6): PMD_DC: The class 'AbstractItem' is suspected to be a Data Class (WOC=28.571%, NOPA=0, NOAM=4, WMC=7)

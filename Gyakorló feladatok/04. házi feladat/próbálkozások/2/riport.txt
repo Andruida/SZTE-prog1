@@ -1,0 +1,95 @@
+
+A feltöltött fájl valóban zip fájl.
+Archive:  h254696.zip
+  inflating: Arena.java              
+  inflating: Ember.java              
+  inflating: Hos.java                
+  inflating: Sarkany.java            
+New directory generated for output
+Feltoltott .java fajlok: 4
+Ezekbol keszult .class fajlok: 4
+Sikeres feltoltes!
+[Hos tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+Konstruktorok
+Metodusok
+∑ Hos
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Sarkany tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+Konstruktorok
+Metodusok
+∑ Sarkany
+ ✓ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+[Arena tesztelese]
+Fuggosegek
+✓ Az osztalynak nincsenek fuggosegei.
+Osztaly deklaracio
+Adattagok
+✓ Adattag: hosok
+✖ Adattag: ellenfel
+Konstruktorok
+✓ Konstruktor: 2 parameteres
+Metodusok
+✓ Metodus: hosErkezik
+✓ Metodus: gyoztunk
+✓ Metodus: hosTamad
+✓ Metodus: altalanosTamadas
+✓ Metodus: eroTamadas
+✓ Metodus: strategiaiTamadas
+∑ Arena
+ ✖ Adattagok
+ ✓ Metodusok
+ ✓ Konstruktorok
+
+
+
+✖ Minden pretest
+
+A TestSarkany.java fajlban egy tesztet sem futtathatunk.
+A TestHos.java fajlban egy tesztet sem futtathatunk.
+Elokeszites: TestArena.java
+A megírt osztályok tesztelése
+
+Arena osztály tesztelése
+  ✓ Sikeres: parameteres konstruktor (2.0 pont)
+  ✓ Sikeres: hosErkezik: legelso elemkent (1.0 pont)
+  ✓ Sikeres: hosErkezik: nincs tele a tomb (1.0 pont)
+  ✓ Sikeres: hosErkezik: tele a tomb (1.0 pont)
+  ✖ Sikertelen: hosTamad (1.0 pont)
+    - Hibaüzenet: a sarkany eletereje rosszul valtozott ==> expected: <100> but was: <79>
+  ✖ Sikertelen: altalanosTamadas, gyozelem (1.0 pont)
+    - Hibaüzenet: a visszaadott ertek nem helyes ==> expected: <2> but was: <4>
+  ✖ Sikertelen: eroTamadas, gyozelem (1.0 pont)
+    - Túllépte a teszt a futási időkorlátot (3 másodperc)
+  ✖ Sikertelen: strategiaiTamadas, gyozelem (1.0 pont)
+    - Hibaüzenet: a visszaadott ertek nem helyes ==> expected: <1> but was: <3>
+  ✖ Sikertelen: altalanosTamadas, vereseg (1.0 pont)
+    - Hibaüzenet: a hos eletereje rosszul valtozott ==> expected: <0> but was: <1>
+  ✖ Sikertelen: eroTamadas, vereseg (1.0 pont)
+    - Túllépte a teszt a futási időkorlátot (3 másodperc)
+  ✖ Sikertelen: strategiaiTamadas, vereseg (1.0 pont)
+    - Hibaüzenet: a hos eletereje rosszul valtozott ==> expected: <0> but was: <2>
+  ✓ Sikeres: gyoztunk (1.0 pont)
+Arena osztály tesztelése befejezve, sikeres: 5, sikertelen: 7
+----------
+
+---------
+Végső pontszám
+6.0 / 13
+[███████████████████████                                                      ]
+Futasido: 0:54
